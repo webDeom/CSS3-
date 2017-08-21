@@ -1,0 +1,17 @@
+*{margin:0px; padding:0px;}
+
+#Main{width:600px;/*宽度*/ height:400px;/*高度*/ background:#222;/*背景颜色*/
+		border:1px solid #CCC;
+		FILTER:alpha(opacity=70);opacity:0.7;-moz-opacity:0.7 ;/*背景透明*/
+		margin:150px 0px 0px 100px;}
+#Con{width:560px;height:340px;  position:absolute;/*绝对定位*/
+	left:100px; top:170px; padding:0px 20px 20px 20px;
+	overflow:auto;/*超出自动出滚动条*/}
+
+#Con h3{font-size:16px;color:#cb986d; font-family:"微软雅黑";
+		padding:35px 0px 25px 0px;}
+#Con p{color:#cfb794; font-size:12px;font-family:"微软雅黑";line-height:25px;}
+#Con img{margin: 15px 0px 15px 50px; border-radius:15px;}
+
+#Con::-webkit-scrollbar{width:26px;background:url("images/scroll_bar.png") no-repeat center;}
+#Con::-webkit-scrollbar-thumb{ background:red;background:url("images/scroll.png") no-repeat 0px 50px;}
