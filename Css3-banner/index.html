@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <!--声明当前页面的编码格式 国际编码 UTF-8 中文编码 GBK-->
+  <meta charset="UTF-8">
+  <!--声明当前页面的三要素-->
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>css-banner</title>
+  <!--样式css 修饰 衣服 化妆品-->
+  <style type="text/css">
+	*{margin:0;padding:0;}
+	ul,li{list-style:none;}
+	.top{width:100%;height:77px;background:#3e2b24;text-align:center;padding:17px 0;}
+	.nav{width:100%;height:50px;background:url("images/bg.jpg");}
+	.nav ul{width:980px;height:50px;margin:0 auto;}
+	.nav ul li{width:136px;height:50px;color:#fff;font-size:18px;font-family:"微软雅黑";float:left;text-align:center;line-height:50px;}
+	.nav ul li a{color:#fff;text-decoration:none;width:136px;height:50px;display:block;}
+	.nav ul li a:hover{background:url("images/hover.jpg");}
+	.banner{width:100%;height:450px;position:relative;overflow:hidden;}
+	.banner .main{width:500%;height:450px;position:absolute;top:0;-webkit-animation:slide 15s infinite;/*动画名称 时间  循环*/}
+	.banner .main li{width:20%;height:450px;float:left;}
+	.banner .main li:nth-child(1){background:url("images/1.jpg") center;}
+	.banner .main li:nth-child(2){background:url("images/2.jpg") center;}
+	.banner .main li:nth-child(3){background:url("images/3.jpg") center;}
+	.banner .main li:nth-child(4){background:url("images/4.jpg") center;}
+	.banner .main li:nth-child(5){background:url("images/5.jpg") center;}
+	@-webkit-keyframes slide{
+		0%{left:0;}
+		20%{left:0;}
+		21%{left:-100%;}
+		40%{left:-100%;}
+		41%{left:-200%;}
+		60%{left:-200%;}
+		61%{left:-300%;}
+		80%{left:-300%;}
+		81%{left:-400%;}
+		100%{left:-400%;}
+	}
+	.banner .go{width:100px;height:10px;position:absolute;bottom:30px;right:50px;}
+	.banner .go li{width:10px;height:10px;background:rgba(0,0,0,0.5);float:left;margin-right:10px;border-radius:5px;box-shadow:1px 1px 3px #fff,-1px -1px 3px #fff;}
+	.banner .go li#in{position:absolute;top:0;left:0;-webkit-animation:slide_2 15s infinite;}
+	@-webkit-keyframes slide_2{
+		0%{background:red;left:0;}
+		20%{background:red;left:0;}
+		21%{background:#330099;left:20px;}
+		40%{background:#330099;left:20px;}
+		41%{background:#cc0000;left:40px;}
+		60%{background:#cc0000;left:40px;}
+		61%{background:#330033;left:60px;}
+		80%{background:#330033;left:60px;}
+		81%{background:#ffff00;left:80px;}
+		100%{background:#ffff00;left:80px;}
+	}
+  </style>
+ </head>
+ <body>
+	
+	<div class="banner">
+		<ul class="main">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<div class="go">
+			<ul>
+				<li id="in"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+ </body>
+</html>
+
