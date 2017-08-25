@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <!--声明当前页面的编码格式 国际编码 UTF-8 中文编码 GBK-->
+  <meta charset="UTF-8">
+  <!--声明当前页面的三要素-->
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>CSS-transform</title>
+  <!--样式css 修饰 衣服 化妆品-->
+  <style type="text/css">
+	*{margin:0;padding:0;}
+	ul,li{list-style:none;}
+	a{text-decoration:none;}
+	#nav{width:100%;height:60px;background:#fff;border:1px solid #e5e5e5;}
+	#nav .header{width:1130px;height:60px;margin:0 auto;}
+	#nav .header .logo{width:207px;height:60px;float:left;margin-left:35px;}
+	#nav .header .nav{width:640px;height:60px;float:right;}
+	#nav .header .nav li{width:100px;height:60px;line-height:60px;float:left;text-align:center;color:#333;cursor:pointer;font-size:24px;}
+	/*图片开始--动画*/
+	#lohas{width:840px;height:600px;margin:20px auto 0;}
+	#lohas ul li{width:260px;height:260px;float:left;margin-right:30px;margin-bottom:10px;transition:all 0.8s linear;transform-style:preserve-3d;perspective:800px;/*视镜*/overflow:hidden;}
+	#lohas ul li:nth-child(3n){margin-right:0;}
+
+	#lohas ul li .textBox{width:240px;height:240px;background:url("images/lineBg.png");padding:10px;font-family:"微软雅黑";transform:translateY(-263px) rotate(130deg) rotateY(-270deg);transition:transform 1s linear;opacity:0;}
+	#lohas ul li:hover .textBox{transform:translateY(-263px) rotate(0deg) rotateY(0deg);opacity:1;}
+
+	.textBox a{height:180px;color:#333;padding:60px 25px 0;text-align:center;display:block;background:#fff;}
+	.textBox a .type{font-size:18px;font-weight:bold;}
+	.textBox a h3{margin:20px 0;font-size:16px;}
+	.textBox a p{color:#888;text-align:left;font-size:14px;}
+
+  </style>
+ </head>
+ <body>
+	<div id="nav">
+		<div class="header">
+			<a class="logo" href="http://www.baidu.com"><img src="images/logo.jpg" /></a>
+			<ul class="nav">
+				<li>时尚</li>
+				<li>美容</li>
+				<li>奢华</li>
+				<li>乐活</li>
+				<li>热点</li>
+				<li>互动</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="lohas">
+		<ul>	
+			<li>
+				<a href="#"><img src="images/2.jpg" width="260" height="260" /></a>
+				<div class="textBox">
+					<a href="#">
+						<span class="type">瘦身</span>
+						<h3>七个诀窍不再嘴馋</h3>
+						<p>冬天到了，天气一冷，人自然需要通过摄取食物中的热量来抵御</p>
+					</a>
+				</div>
+			</li>
+			<li>
+				<a href="#"><img src="images/3.jpg" width="260" height="260" /></a>
+				<div class="textBox">
+					<a href="#">
+						<span class="type">瘦身</span>
+						<h3>七个诀窍不再嘴馋</h3>
+						<p>冬天到了，天气一冷，人自然需要通过摄取食物中的热量来抵御</p>
+					</a>
+				</div>
+			</li>
+			<li>
+				<a href="#"><img src="images/4.jpg" width="260" height="260" /></a>
+				<div class="textBox">
+					<a href="#">
+						<span class="type">瘦身</span>
+						<h3>七个诀窍不再嘴馋</h3>
+						<p>冬天到了，天气一冷，人自然需要通过摄取食物中的热量来抵御</p>
+					</a>
+				</div>
+			</li>
+			<li>
+				<a href="#"><img src="images/5.jpg" width="260" height="260" /></a>
+				<div class="textBox">
+					<a href="#">
+						<span class="type">瘦身</span>
+						<h3>七个诀窍不再嘴馋</h3>
+						<p>冬天到了，天气一冷，人自然需要通过摄取食物中的热量来抵御</p>
+					</a>
+				</div>
+			</li>
+			<li>
+				<a href="#"><img src="images/6.jpg" width="260" height="260" /></a>
+				<div class="textBox">
+					<a href="#">
+						<span class="type">瘦身</span>
+						<h3>七个诀窍不再嘴馋</h3>
+						<p>冬天到了，天气一冷，人自然需要通过摄取食物中的热量来抵御</p>
+					</a>
+				</div>
+			</li>
+			<li>
+				<a href="#"><img src="images/7.jpg" width="260" height="260" /></a>
+				<div class="textBox">
+					<a href="#">
+						<span class="type">瘦身</span>
+						<h3>七个诀窍不再嘴馋</h3>
+						<p>冬天到了，天气一冷，人自然需要通过摄取食物中的热量来抵御</p>
+					</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+ </body>
+</html>
